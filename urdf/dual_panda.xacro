@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name = "dual_panda" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <xacro:include filename="$(find dual_panda_bringup)/urdf/dual_panda.ros2_control.xacro" />
+    <xacro:include filename="$(find dual_panda_bringup)/urdf/dual_panda_macro.xacro" />
+    <xacro:include filename="$(find dual_panda_bringup)/urdf/world_base_macro.xacro" />
+    
+    <xacro:world_base />
+    <xacro:dual_panda_ros2_control />
+    <xacro:dual_panda />
+
+</robot>

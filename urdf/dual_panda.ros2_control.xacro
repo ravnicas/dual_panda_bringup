@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="$(find dual_panda_bringup)/urdf/panda.ros2_control.xacro" />
+
+    <xacro:macro name="dual_panda_ros2_control">
+
+        <xacro:panda_ros2_control num="left" initial_positions_file="initial_positions.yaml"/>
+        <xacro:panda_ros2_control num="right" initial_positions_file="initial_positions.yaml"/>
+
+    </xacro:macro>
+</robot>

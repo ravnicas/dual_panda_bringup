@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="$(find dual_panda_bringup)/urdf/panda_macro.xacro" />
+
+    <xacro:macro name="dual_panda" >
+
+        <xacro:panda num="left" >
+            <origin rpy="0 0 0" xyz="-1 0 0" />
+        </xacro:panda>
+        <xacro:panda num="right" >
+            <origin rpy="0 0 0" xyz="1 0 0" />
+        </xacro:panda>
+
+    </xacro:macro>
+</robot>
